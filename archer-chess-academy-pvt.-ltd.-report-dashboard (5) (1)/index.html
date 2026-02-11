@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archer Chess Academy Pvt. Ltd. Report Dashboard</title>
+    
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/png" href="https://ik.imagekit.io/5l2evgjsq/archer%20kids%20splash.png">
+    <link rel="apple-touch-icon" href="https://ik.imagekit.io/5l2evgjsq/archer%20kids%20splash.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Typography System: Inter (Sans), Space Mono (Mono), Roboto Slab (Slab) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Space Mono', 'monospace'],
+              slab: ['Roboto Slab', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+      /* 1. Body / UI -> Sans-Serif */
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f3f4f6;
+      }
+
+      /* 2. Headings -> Monospace */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Space Mono', monospace;
+      }
+
+      /* 3. Highlight/Footer -> Slab Serif (Utility Class) */
+      .font-slab {
+        font-family: 'Roboto Slab', serif;
+      }
+
+      /* Ensure the report looks like a paper document */
+      .report-paper {
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
+      
+      /* Hide scrollbar for skills list in editor */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 2px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "jspdf": "https://esm.sh/jspdf@^4.0.0",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "chart.js": "https://esm.sh/chart.js@^4.4.1",
+    "chart.js/auto": "https://esm.sh/chart.js@^4.4.1/auto",
+    "react-chartjs-2": "https://esm.sh/react-chartjs-2@^5.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
